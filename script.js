@@ -106,3 +106,9 @@ const s1 = studentInfo('John', '101-2023');
 //     console.log(s1[keys]);
 // }
 
+function computeArea(width, height){
+    const area =width * height
+    return `The area of a rectangle with a width of ${width} and a height of ${height} is ${area} square units.`
+}
+
+console.log(computeArea(5,10));
