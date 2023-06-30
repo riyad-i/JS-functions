@@ -147,3 +147,13 @@ devObjs = getDevObject('maria', 'html', 'css', 'js')
 console.log(`${devObjs.name} : ${devObjs.skills}`);
 
 
+function userInfo(name, ...details){
+    return {
+        name,
+        details
+    }
+}
+
+
+const u1 = userInfo('john', 24, 'NYC')
+console.log(`${u1.name} : ${u1.details}`);
