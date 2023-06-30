@@ -126,8 +126,24 @@ const planetHasWater = function(planet){ //function expression
 // console.log(planetHasWater('mars'));
 
 function getDevObject(name) {
-    console.log(name);
-    console.log(arguments);
+    // console.log(name);
+    // console.log(arguments);
+    const skills = []
+
+    for (i=1;i<arguments.length;i++){
+        skills.push(arguments[i])
+    }
+    // console.log(arguments);
+    return {
+        name,//short for name: name
+        skills
+
+    }
+
 }
 
-getDevObject('maria', 'html', 'css', 'js')
+devObjs = getDevObject('maria', 'html', 'css', 'js')
+
+console.log(`${devObjs.name} : ${devObjs.skills}`);
+
+
