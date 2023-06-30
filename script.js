@@ -147,7 +147,7 @@ devObjs = getDevObject('maria', 'html', 'css', 'js')
 console.log(`${devObjs.name} : ${devObjs.skills}`);
 
 
-function userInfo(name, ...details){
+function userInfo(name, ...details){//called spread operator in array, rest parameter as parameter
     return {
         name,
         details
