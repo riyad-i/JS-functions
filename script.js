@@ -112,7 +112,7 @@ function computeArea(width, height){//function declaration
     return `The area of a rectangle with a width of ${width} and a height of ${height} is ${area} square units.`
 }
 
-console.log(computeArea(5,10));
+// console.log(computeArea(5,10));
 
 const planetHasWater = function(planet){ //function expression
     if (planet.toLowerCase() === "earth" || planet.toLowerCase() === "mars"){
@@ -123,4 +123,11 @@ const planetHasWater = function(planet){ //function expression
 }
 
 
-console.log(planetHasWater('mars'));
+// console.log(planetHasWater('mars'));
+
+function getDevObject(name) {
+    console.log(name);
+    console.log(arguments);
+}
+
+getDevObject('maria', 'html', 'css', 'js')
